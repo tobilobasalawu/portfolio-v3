@@ -4,15 +4,14 @@ import { resumeFileName } from '@/lib/utils/config';
 export const heroSection: HeroSectionType = {
     subtitle: 'Hello, I’m',
     title: [
-        'Muhammad Talha!',
-        'Data Engineer',
-        'Solutions Architect',
-        'Data Scientist'
+        'Oluwatobi Salawu!',
+        'Aspiring Software Engineer',
+        'TLevel Student',
     ],
     tagline: 'Specializing in ETL pipelines and solutions architecture.',
     description: 
-        "I’m a Computer Science and Artificial Intelligence student at FAST National University of Computer and Emerging Sciences, specializing in Big Data Technologies and Machine Learning. I am passionate about acquiring new skills and building projects to gain hands-on experience. I thrive on collaboration and am dedicated to turning innovative ideas into reality.",
-    specialText: 'Currently open to job opportunities and freelance projects.',
+        "I am a T-level student and an aspiring software engineer. I don't know much, but with the little I do know, I've built some pretty crazy things. I'm eager to learn and push the boundaries of what I can create.",
+    specialText: 'Currently open to Internship and Apprentiship Opportunities.',
     cta: {
         title: 'View My Resume',
         url: `/${resumeFileName}`,
