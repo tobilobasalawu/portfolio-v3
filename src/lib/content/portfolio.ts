@@ -21,7 +21,7 @@ export const seoData = {
   title: 'Oluwatobi Salawu | Portfolio',
   description: 'Aspiring Sotfware Engineer, T-Level Student, Improving my skills to be better at what I do',
   author: author.name,
-  image: 'https://i.postimg.cc/7hTb4LDz/Portfolio.png',
+  image: '/preview.png',
   url: 'https://oluwatobisalawu.me/',
   keywords: [
     'Tobi',
