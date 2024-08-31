@@ -7,9 +7,9 @@
 import { StringKeyValueType } from '../types';
 
 export const socialLinks: StringKeyValueType = {
-  twitter: 'https://twitter.com/c2tlhah',
-  github: 'https://github.com/c2-tlhah',
-  linkedin: 'https://www.linkedin.com/in/muhammad-talha-ramzan',
+  twitter: 'https://x.com/SalawuToby',
+  github: 'https://github.com/tobilobasalawu',
+  linkedin: 'https://www.linkedin.com/in/oluwatobi-s/',
 };
 
 export const author = {
@@ -19,25 +19,23 @@ export const author = {
 
 export const seoData = {
   title: 'Oluwatobi Salawu | Portfolio',
-  description: 'Passionate about Data Engineering and Mahine Learning, focusing on creating innovative digital solutions.',
+  description: 'Aspiring Sotfware Engineer, T-Level Student, Improving my skills to be better at what I do',
   author: author.name,
   image: 'https://i.postimg.cc/7hTb4LDz/Portfolio.png',
-  url: 'https://vercel.app',
+  url: 'https://oluwatobisalawu.me/',
   keywords: [
     'Tobi',
     'Oluwatobi Salawu',
-    'Muhammad Talha Ramzan',
-    '@o21tlha',
-    'talha ramzan',
-    'o21ex',
-    '@muhammadtalha',
-    '@talha',
+    '@SalawuToby',
+    'oluwatobi salawu',
+    'tobilobasalawu',
+    '@tobilobasalawu',
+    '@oluwatobi-s',
     'Portfolio',
-    'Talha Portfolio',
-    'Muhammad Talha Portfolio',
-    'Muhammad Talha Ramzan Portfolio',
-    'c2-tlhah',
-    '@talharamzan',
-    'o21tlha Portfolio ',
+    'Oluwatobi Portfolio',
+    'Oluwatobi Salawu Portfolio',
+    'oluwatobi-s',
+    '@tobilobasalawu',
+    'Oluwatobi Portfolio ',
   ],
 };
