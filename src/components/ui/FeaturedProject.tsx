@@ -41,8 +41,8 @@ const FeaturedProject = ({
           src={img}
           alt={name}
           width={720}
-          height={480}
-          className="h-full w-full object-cover duration-200 group-hover:scale-105 transition-transform"
+          height={750}
+          className="h-full w-full object-fill duration-200 group-hover:scale-105 transition-transform"
           placeholder="blur"
           blurDataURL={blurImageURL}
         />
