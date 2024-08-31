@@ -93,20 +93,15 @@
     <h1>Muhammad Talha Ramzan</h1>
     <p>Data Engineering and Analytics Expert</p>
     <div class="buttons">
-        <button class="btn" onclick="viewResume()">View Resume</button>
         <button class="btn" onclick="downloadResume()">Download Resume</button>
     </div>
 </div>
 
 <script>
-    function viewResume() {
-        window.location.href = 'CV.html';  // Replace with the correct path or URL to view the resume
-    }
-
     function downloadResume() {
         const link = document.createElement('a');
-        link.href = 'resume.pdf';  // Ensure the path to your resume file is correct
-        link.download = 'Muhammad_Talha_Ramzan_Resume.pdf';
+        link.href = 'Oluwatobi_Salawu.pdf';  // Ensure the path to your resume file is correct
+        link.download = 'Oluwatobi_Salawu.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
