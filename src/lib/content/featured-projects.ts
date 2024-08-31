@@ -9,7 +9,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       name: 'LinguaFlashAI-Flashcard',
       description: 'An innovative language learning application that leverages AI to create flashcards.',
       tasks: 'LinguaFlash-AI is an AI-powered tool that creates custom flashcards for over 50 languages, making language learning easier and more efficient.',
-      url: 'https://github.com/c2-tlhah/youtube-data-engineering',
+      url: 'https://linguaflashai.vercel.app/',
       img: '/Linguaflash-AI.png',
       projectSkills: [
         { name: 'ReactJs', icon: 'logos:reactjs' },
