@@ -6,6 +6,7 @@ import Cursor from '@/components/ui/Cursor';
 
 import '../styles/globals.css';
 import type { Metadata } from 'next';
+import Script from 'next/script'; // Import Script from next/script
 
 export const metadata: Metadata = {
   title: seoData.title,
@@ -76,7 +77,19 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <script src="/scripts/no-flash.js" async />
+        <Script
+          id="google-analytics"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-2PW52VZB98"
+        />
+        <Script id="google-analytics-config">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2PW52VZB98');
+          `}
+        </Script>
       </head>
       <body className={`text-text bg-bg ${fontVariables}`}>
         <Cursor className="hidden dark:lg:block" />
