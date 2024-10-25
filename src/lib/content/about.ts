@@ -13,6 +13,7 @@ export const aboutSection: AboutSectionType = {
       'Python',
       'JavaScript',
       'HTML/CSS',
+      'C#',
       'Firebase',
       'NextJS',
       'TailwindCSS'
