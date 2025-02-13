@@ -64,7 +64,6 @@ const Hero = () => {
         className="max-w-3xl text-base md:text-lg"
         style={{ whiteSpace: 'pre-line' }}
       >
-        {description}
       </motion.p>
 
       <motion.p
@@ -73,25 +72,7 @@ const Hero = () => {
         animate="show"
         className="font-mono text-xs md:text-sm text-accent"
       >
-        {specialText}
       </motion.p>
-
-      {cta && (
-        <Button
-          size="lg"
-          type="link"
-          variants={slideUp({ delay: getAnimationDelay(5) })}
-          initial="hidden"
-          animate="show"
-          href={cta?.url ?? '#'}
-          className={`mt-5 xs:mt-8 md:mt-10 rounded-full ${
-            cta.hideInDesktop ? 'md:hidden' : ''
-          }`}
-          sameTab={cta?.sameTab}
-        >
-          {cta.title}
-        </Button>
-      )}
     </Wrapper>
   );
 };

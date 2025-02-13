@@ -2,11 +2,9 @@ import { HeroSectionType } from '@/lib/types/sections';
 import { resumeFileName } from '@/lib/utils/config';
 
 export const heroSection: HeroSectionType = {
-    subtitle: 'Hello, I’m',
+    subtitle: "I'm Bouta Cook :)",
     title: [
-        'Oluwatobi Salawu!',
-        'Aspiring Software Engineer',
-        'TLevel Student',
+        'This Site is Under Construction'
     ],
     tagline: 'Specializing in ETL pipelines and solutions architecture.',
     description: 
