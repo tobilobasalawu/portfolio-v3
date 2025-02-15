@@ -8,9 +8,9 @@ export const DATA = {
   location: "Birmingham, UK",
   locationLink: "https://www.google.com/maps/place/Birmingham/",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "An aspiring Software Engineer and Entrepreneur. Passionate about building innovative solutions and constantly learning. Balancing school, a startup, and refining my skills.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I started coding when I was 9, diving into Arduino, HTML, and CSS. Fast forward to now—I’m 17, studying [Software Engineering at A-Level in college(sixth form)](/#education),  while building [WAprentice a platform that provides all the tools you need to secure an apprenticeship](https://wapprentice.app). Along the way,[I’ve won 3 out of 3 hackathons I’ve participated in](/#hackathons) and am focused on growing my startup while mastering my craft.",
   avatarUrl: "/me.jpg",
   skills: [
     "Python",
