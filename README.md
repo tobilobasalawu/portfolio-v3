@@ -1,5 +1,5 @@
 
-# Portfolio-v3
+# Portfolio-v4
 
 ## Overview
 
@@ -7,16 +7,11 @@
 
 ## Features
 
-- **Responsive Design**: Optimized for all screen sizes, from mobile to desktop.
-- **Dark Mode**: Provides an eye-friendly dark theme that is easily toggled by users.
-- **SEO Friendly**: Enhanced with meta tags, Open Graph tags, and structured data for better search engine ranking.
+
 
 ## Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+), React.js, Typescript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion, CSS Transitions
-- **Backend**: Node.js
+
 
 
 ## Installation
@@ -48,7 +43,7 @@ Contributions are welcome! If you have suggestions or want to report an issue, p
 
 ## Acknowledgements
 
-Got inspiration from @[Talha-021ex](https://github.com/c2-tlhah).
+
 
 ## Tags
 
