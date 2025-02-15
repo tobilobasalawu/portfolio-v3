@@ -220,4 +220,16 @@ export const Icons = {
       />
     </svg>
   ),
+    devpost: (props: IconProps) => (
+      <svg
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      className="size-8"
+      fill="currentColor"
+      {...props}
+    >
+      <title>Devpost</title>
+      <path d="M4 4 H10 A8 8 0 0 1 10 20 H4 Z" />
+    </svg>
+    ),
 };

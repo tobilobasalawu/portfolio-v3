@@ -164,9 +164,9 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
+                  Currently I have attended{" "}
+                  {DATA.hackathons.length} hackathons (attending as much as I can). People from around the
+                  country would come together and build incredible things in 1-3
                   days. It was eye-opening to see the endless possibilities
                   brought to life by a group of motivated and passionate
                   individuals.
@@ -208,13 +208,12 @@ export default function Page() {
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  on LinkedIn
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                and I&apos;ll respond whenever I can .
               </p>
             </div>
           </BlurFade>
