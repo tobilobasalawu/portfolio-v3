@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+    "deploy": "git add . && git commit -m 'Deploy' && git push"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
