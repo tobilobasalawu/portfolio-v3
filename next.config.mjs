@@ -2,6 +2,7 @@
 const nextConfig = {
   output: "export",
   reactStrictMode: true,
+  distDir: ".",
   assetPrefix: "/", // for github pages
 };
 
