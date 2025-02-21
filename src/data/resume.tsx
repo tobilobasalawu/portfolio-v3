@@ -278,7 +278,7 @@ export const DATA = {
     },
     {
       title: "Trading Algorithm Hackathon 2025",
-      dates: "February 3rd - 4th, 2018",
+      dates: "January 10th - 20th, 2025",
       location: "Online",
       description:
         "A Python tool for creating and testing trading algorithms. Configured stock data, indicators.",
