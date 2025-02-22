@@ -160,5 +160,11 @@ export const projects: Project[] = [
     name: "ShopEase",
     technologies: ["Figma", "Ecommerce Design", "UI/UX", "Mobile Design"],
     link: "https://dribbble.com/shots/22347180-ShopEase-Your-Ultimate-Retail-Therapy-Companion"
-  }
+  },
+  {
+    year: "2022-2018",
+    name: "Thousands of my Arduino, Buildbox, and Scratch Projects",
+    technologies: ["Arduino", "Scratch", "Buildbox"],
+    link: ""
+  },
 ];
