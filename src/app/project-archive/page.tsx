@@ -96,6 +96,9 @@ export default function ProjectArchive() {
             </ShineBorder>
           ))}
         </div>
+
+        <p className="text-sm mt-20">ps: there's more, I can't find/retrieve, or it's probably stored in my private repo or lost somewhere🤪</p>
+
       </div>
     </div>
   );
