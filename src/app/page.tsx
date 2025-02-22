@@ -153,7 +153,7 @@ export default function Page() {
             ))}
           </div>
         </div>
-        <Link href={'/'} className="hover:underline hover:translate-x-1 transition-all duration-200">
+        <Link href={'/project-archive'} className="hover:underline hover:translate-x-1 transition-all duration-200">
           <p className="text-sm text-center">View Full Project Archive →</p>
         </Link>
       </section>
