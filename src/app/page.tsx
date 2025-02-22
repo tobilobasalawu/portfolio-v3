@@ -6,9 +6,11 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { cn } from "@/lib/utils";
+import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import Link from "next/link";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Markdown from "react-markdown";
-
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -151,7 +153,12 @@ export default function Page() {
             ))}
           </div>
         </div>
+        <Link href={'/'} className="hover:underline hover:translate-x-1 transition-all duration-200">
+          <p className="text-sm text-center">View Full Project Archive →</p>
+        </Link>
       </section>
+      
+
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
