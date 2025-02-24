@@ -234,6 +234,22 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "Superflex frontend hackathon",
+      dates: "February 15th - 19th, 2024",
+      location: "Online",
+      description:
+        "Developed an interactive platform that helps users enhance their frontend design skills by participating in AI-powered design challenges",
+      image:
+        "/superflex.png",
+      links: [
+          {
+            title: "Source",
+            icon: <Icons.github className="h-4 w-4" />,
+            href: "https://github.com/tobilobasalawu/ui-royale",
+          }
+      ],
+    },
+    {
       title: "Hack the Future: AI & Open Source Hackathon",
       dates: "January 24th - 27th, 2024",
       location: "Online",
