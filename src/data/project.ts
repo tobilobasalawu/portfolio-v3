@@ -9,7 +9,7 @@ export const projects: Project[] = [
   {
     year: "2025",
     name: "UI-Royale",
-    technologies: ["Next.js", "Firebase", "ShadcnUI", "MagicUI", "Superflex"],
+    technologies: ["Next.js", "Firebase", "ShadcnUI", "MagicUI", "Superflex", "OpenAI"],
     link: "https://ui-royale.vercel.app/",
   },
   {
