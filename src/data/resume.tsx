@@ -25,6 +25,7 @@ export const DATA = {
     "Git",
     "GitHub",
     "Firebase",
+    "Supabase",
     "Clerk",
     "OpenAI",
     "Vercel",
