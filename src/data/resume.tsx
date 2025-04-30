@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "An aspiring Software Engineer and Entrepreneur. Passionate about building innovative solutions and constantly learning. Balancing school, a startup, and refining my skills.",
   summary:
-    "I started coding when I was 9, diving into Arduino, HTML, and CSS. Fast forward to now—I’m 17, studying [Software Engineering at A-Level in college(sixth form)](/#education),  while building [WAprentice a platform that provides all the tools you need to secure an apprenticeship](https://wapprentice.app). Along the way,[I’ve won 4 out of 4 hackathons I’ve participated in](/#hackathons) and am focused on growing my startup while mastering my craft.",
+    "I started coding when I was 9, diving into Arduino, HTML, and CSS. Fast forward to now—I’m 18, studying [Software Engineering at T-Level in college(sixth form)](/#education),  while building [LEAF Network a platform that helps students in building acadmic and career development opportunities](https://www.leaf-network.org). Along the way,[I’ve won 4 out of 4 hackathons I’ve participated in](/#hackathons) and am focused on gaining real world experience while mastering my craft.",
   avatarUrl: "/me.jpeg",
   skills: [
     "Python",

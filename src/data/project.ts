@@ -8,6 +8,18 @@ export type Project = {
 export const projects: Project[] = [
   {
     year: "2025",
+    name: "LEAF Network (dashboard)",
+    technologies: ["Next.js", "Supabase", "TailwindCSS", "MagicUI", "ShadcnUI"],
+    link: "https://app.leaf-network.org",
+  },
+  {
+    year: "2025",
+    name: "LEAF Network (website)",
+    technologies: ["Next.js", "Supabase", "TailwindCSS", "MagicUI", "ShadcnUI"],
+    link: "https://www.leaf-network.org",
+  },
+  {
+    year: "2025",
     name: "UI-Royale",
     technologies: ["Next.js", "Firebase", "ShadcnUI", "MagicUI", "Superflex", "OpenAI"],
     link: "https://ui-royale.vercel.app/",
