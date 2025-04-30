@@ -8,7 +8,7 @@ export const DATA = {
   location: "Birmingham, UK",
   locationLink: "https://www.google.com/maps/place/Birmingham/",
   description:
-    "An aspiring Software Engineer and Entrepreneur. Passionate about building innovative solutions and constantly learning. Balancing school, a startup, and refining my skills.",
+    "An aspiring Software Engineer and Entrepreneur. Passionate about building innovative solutions and constantly learning. Balancing school and refining my skills.",
   summary:
     "I started coding when I was 9, diving into Arduino, HTML, and CSS. Fast forward to now—I’m 18, studying [Software Engineering at T-Level in college(sixth form)](/#education),  while building [LEAF Network a platform that helps students in building acadmic and career development opportunities](https://www.leaf-network.org). Along the way,[I’ve won 4 out of 4 hackathons I’ve participated in](/#hackathons) and am focused on gaining real world experience while mastering my craft.",
   avatarUrl: "/me.jpeg",
@@ -230,7 +230,33 @@ export const DATA = {
       image: "",
       video:
         "/wapprentice.mp4",
-    },
+    },    
+    {
+      title: "LEAF Network (website)",
+      href: "https://www.leaf-network.org",
+      dates: "April 2025 - Present",
+      active: true,
+      description:
+        "A platform that helps students in building academic and career development opportunities.",
+      technologies: [
+        "Next.js",
+        "TailwindCSS",
+        "ShadcnUI",
+        "MagicUI",
+        "Supabase",
+        "Vercel",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.leaf-network.org",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "",
+      video:
+        "/leaf.mp4",
+    }, 
   ],
   hackathons: [
     {
