@@ -4,13 +4,13 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Oluwatobi Salawu",
   initials: "OS",
-  url: "https://oluwatobisalawu.tech",
+  url: "https://oluwatobisalawu.me",
   location: "Birmingham, UK",
   locationLink: "https://www.google.com/maps/place/Birmingham/",
   description:
     "An aspiring Software Engineer and Entrepreneur. Passionate about building innovative solutions and constantly learning. Balancing school and refining my skills.",
   summary:
-    "I started coding when I was 9, diving into Arduino, HTML, and CSS. Fast forward to now—I’m 18, studying [Software Engineering at T-Level in college(sixth form)](/#education),  while building [LEAF Network a platform that helps students in building acadmic and career development opportunities](https://www.leaf-network.org). Along the way,[I’ve won 4 out of 4 hackathons I’ve participated in](/#hackathons) and am focused on gaining real world experience while mastering my craft.",
+    "I started coding when I was 9, diving into Arduino, HTML, and CSS. Fast forward to now—I'm 18, studying [Software Engineering at T-Level in college(sixth form)](/#education),  while building [LEAF Network a platform that helps students in building acadmic and career development opportunities](https://www.leaf-network.org). Along the way,[I've won 4 out of 4 hackathons I've participated in](/#hackathons) and am focused on gaining real world experience while mastering my craft.",
   avatarUrl: "/me.jpeg",
   skills: [
     "Python",
@@ -45,30 +45,32 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/tobilobasalawu",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/oluwatobi-s/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://x.com/Toby_Sal/",
         icon: Icons.x,
-
         navbar: true,
       },
       email: {
         name: "Send Email",
         url: "mailto:tobisal.dev@gmail.com",
         icon: Icons.email,
-
         navbar: true,
       },
+      cv: {
+        name: "View Resume",
+        url: "https://drive.google.com/file/d/1CoMwAkzAjuaeXH3wucYM_YnDWZBg08z5/view?usp=drivesdk",
+        icon: Icons.cv,
+        navbar: true,
+      }
     },
   },
 
