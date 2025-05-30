@@ -8,6 +8,12 @@ export type Project = {
 export const projects: Project[] = [
   {
     year: "2025",
+    name: "Baro Management",
+    technologies: ["Next.js", "Supabase", "TailwindCSS", "MagicUI", "TypeScript"],
+    link: "https://baro-management-web.vercel.app/",
+  },
+  {
+    year: "2025",
     name: "LEAF Network (dashboard)",
     technologies: ["Next.js", "Supabase", "TailwindCSS", "MagicUI", "ShadcnUI"],
     link: "https://app.leaf-network.org",
