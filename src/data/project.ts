@@ -64,7 +64,7 @@ export const projects: Project[] = [
     year: "2024",
     name: "Minful Moments",
     technologies: ["Next.js", "Firebase", "TailwindCSS", "Clerk", "Custom Audio"],
-    link: "",
+    link: "https://github.com/tobilobasalawu/minfulMoments",
   },
   {
     year: "2024",
