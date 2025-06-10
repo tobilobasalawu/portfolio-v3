@@ -68,7 +68,7 @@ export const DATA = {
       },
       cv: {
         name: "View Resume",
-        url: "https://drive.google.com/file/d/1CoMwAkzAjuaeXH3wucYM_YnDWZBg08z5/view?usp=drivesdk",
+        url: "https://drive.google.com/file/d/1ibPMZQcmCYYBdZpZ6doHv87-kOy0500l/view?usp=drivesdk",
         icon: Icons.cv,
         navbar: true,
       }
