@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { title } from "process";
 
 export const DATA = {
   name: "Oluwatobi Salawu",
@@ -246,7 +247,6 @@ export const DATA = {
         "TailwindCSS",
         "ShadcnUI",
         "MagicUI",
-        "Supabase",
         "Vercel",
       ],
       links: [
@@ -259,7 +259,34 @@ export const DATA = {
       image: "",
       video:
         "/leaf.mp4",
-    }, 
+    },
+    {
+      title: "LEAF Network (Dashboard)",
+      href: "https://app.leaf-network.org",
+      dates: "April 2025 - Present",
+      active: true,
+      description:
+        "Authorised user dashbaord for students registered in the LEAF Network. ",
+      technologies: [
+        "Next.js",
+        "TailwindCSS",
+        "ShadcnUI",
+        "MagicUI",
+        "Supabase",
+        "Vercel",
+        "Resend"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://app.leaf-network.org",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "",
+      video:
+        "/leaf-dashboard.mp4",
+    },
   ],
   hackathons: [
     {
