@@ -8,15 +8,21 @@ export type Project = {
 export const projects: Project[] = [
   {
     year: "2025",
-    name: "Baro Management",
-    technologies: ["Next.js", "Supabase", "TailwindCSS", "MagicUI", "TypeScript"],
-    link: "https://baro-management-web.vercel.app/",
+    name: "Pathera",
+    technologies: ["Next.js", "Supabase", "TailwindCSS", "ShadcnUI", "Stripe", "Resend"],
+    link: "https://pathera.app",
   },
   {
     year: "2025",
-    name: "LEAF Network (dashboard)",
+    name: "PersonaSync",
     technologies: ["Next.js", "Supabase", "TailwindCSS", "MagicUI", "ShadcnUI"],
-    link: "https://app.leaf-network.org",
+    link: "https://github.com/tobilobasalawu/persnasync",
+  },
+  {
+    year: "2025",
+    name: "Baro Management",
+    technologies: ["Next.js", "Supabase", "TailwindCSS", "MagicUI", "TypeScript"],
+    link: "https://baro-management-web.vercel.app/",
   },
   {
     year: "2025",

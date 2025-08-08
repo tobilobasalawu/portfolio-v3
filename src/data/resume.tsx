@@ -1,6 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { title } from "process";
+import { on, title } from "process";
 
 export const DATA = {
   name: "Oluwatobi Salawu",
@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "An aspiring Software Engineer and Entrepreneur. Passionate about building innovative solutions and constantly learning. Balancing school and refining my skills.",
   summary:
-    "I started coding when I was 9, diving into Arduino, HTML, and CSS. Fast forward to now—I'm 18, studying [Software Engineering at T-Level in college(sixth form)](/#education),  while building [LEAF Network a platform that helps students in building acadmic and career development opportunities](https://www.leaf-network.org). Along the way,[I've won 4 out of 4 hackathons I've participated in](/#hackathons) and am focused on gaining real world experience while mastering my craft.",
+    "I started coding when I was 9, diving into Arduino, HTML, and CSS, though I wasn't really serious about it until I was 12. Fast forward to now I'm 18, studying [Software Engineering at T-Level in college(sixth form)](/#education),  while building [Pathera a platform that helps students in building acadmic and career development opportunities](https://pathera.app). Along the way,[I've won 4 out of 5 hackathons I've participated in](/#hackathons) and am focused on gaining real world experience while mastering my craft.",
   avatarUrl: "/me.jpeg",
   skills: [
     "Python",
@@ -68,7 +68,7 @@ export const DATA = {
       },
       cv: {
         name: "View Resume",
-        url: "https://drive.google.com/file/d/1ibPMZQcmCYYBdZpZ6doHv87-kOy0500l/view?usp=drivesdk",
+        url: "https://drive.google.com/file/d/108rgoVGZKuq2qPHUIVKwhlPHIXr9DwSc/view",
         icon: Icons.cv,
         navbar: true,
       }
@@ -76,6 +76,18 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: "Pathera",
+      href: "https://pathera.app",
+      badges: [],
+      location: "Remote",
+      title: "Founding Engineer",
+      logoUrl: "/pathera.png",
+      start: "June 2025",
+      end: "Present",
+      description:
+        "Led the development of a youth platform using Next.js, Tailwind CSS, ShadcnUI, MagicUI, Framer motion, Supabase, Stripe, Resend and Vercel delivering features that directly impacted over 1000+ users. Built user onboarding flows, event registration systems, and personalized dashboards. Implemented an admin approval workflow and automated email notifications using backend APIs. Developed a referral leaderboard system, increasing engagement and community growth. Integrated form submissions and data handling. Collaborated closely with the founder to iterate based on real user feedback. Managed deployments and feature rollouts with CI/CD practices(Github Actions), ensuring rapid iteration",
+    },
     {
       company: "Headstarter",
       href: "https://headstarter.co/",
@@ -236,7 +248,7 @@ export const DATA = {
         "/wapprentice.mp4",
     },    
     {
-      title: "LEAF Network (website)",
+      title: "LEAF PATHWAYS",
       href: "https://www.leaf-network.org",
       dates: "April 2025 - Present",
       active: true,
@@ -261,25 +273,27 @@ export const DATA = {
         "/leaf.mp4",
     },
     {
-      title: "LEAF Network (Dashboard)",
-      href: "https://app.leaf-network.org",
+      title: "Pathera",
+      href: "https://pathera.app",
       dates: "April 2025 - Present",
       active: true,
       description:
-        "Authorised user dashbaord for students registered in the LEAF Network. ",
+        "A platform that helps students in building acadmic and career development opportunities.",
       technologies: [
         "Next.js",
         "TailwindCSS",
         "ShadcnUI",
-        "MagicUI",
+        "Stripe",
         "Supabase",
         "Vercel",
-        "Resend"
+        "Resend",
+        "Framer Motion",
+        "MagicUI",
       ],
       links: [
         {
           type: "Website",
-          href: "https://app.leaf-network.org",
+          href: "https://pathera.app",
           icon: <Icons.globe className="size-3" />,
         }
       ],
@@ -289,6 +303,22 @@ export const DATA = {
     },
   ],
   hackathons: [
+    {
+      title: "Bolt.new World's Largest Hackathon",
+      dates: "July 2025",
+      location: "London, UK",
+      description:
+        "We developed was PersonaSync a voice-first personality engine that reimagines how people interact with forms and surveys.",
+      image:
+        "/bolt.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/tobilobasalawu/persnasync",
+        }
+      ],
+    },
     {
       title: "Superflex frontend hackathon",
       dates: "February 15th - 19th, 2024",

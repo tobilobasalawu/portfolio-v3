@@ -1,104 +1,138 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { projects } from "@/data/project";
 import { ShineBorder } from "@/components/magicui/shine-border";
+import { ExternalLink, Github, Globe } from "lucide-react";
 
 export default function ProjectArchive() {
+  // Group projects by year
+  const projectsByYear = projects.reduce((acc, project) => {
+    if (!acc[project.year]) {
+      acc[project.year] = [];
+    }
+    acc[project.year].push(project);
+    return acc;
+  }, {} as Record<string, typeof projects>);
+
+  const years = Object.keys(projectsByYear).sort((a, b) => parseInt(b) - parseInt(a));
+
   return (
-    <div className="lg:py-24">
-      <div className="mb-16">
-        <Link 
-          href="/"
-          className="text-sm text-muted-foreground hover:text-primary inline-flex items-center"
-        >
-          ← Back
-        </Link>
-        <h1 className="text-4xl font-bold mt-16 mb-8">All Projects</h1>
-      </div>
-
-      <div className="w-full">
-        <table className="min-w-full table-fixed hidden lg:table">
-          <thead>
-            <tr className="border-b">
-              <th className="text-left py-4 px-6 w-1/5">Year</th>
-              <th className="text-left py-4 px-6 w-2/5">Project</th>
-              <th className="text-left py-4 px-6 w-1/5">Built with</th>
-              <th className="text-left py-4 px-6 w-1/5">Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            {projects.map((project, index) => (
-              <tr 
-                key={index} 
-                className="border-b hover:bg-muted/50 transition-colors"
-              >
-                <td className="py-4 px-6 text-muted-foreground">
-                  {project.year}
-                </td>
-                <td className="py-4 px-6 font-medium ">
-                  {project.name}
-                </td>
-                <td className="py-4 px-6">
-                  <div className="flex gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge 
-                        key={techIndex} 
-                        variant="secondary"
-                        className="text-xs"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </td>
-                <td className="py-4 px-6">
-                  {project.link && (
-                    <Link
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-muted-foreground hover:text-primary inline-flex items-center"
-                    >
-                      {new URL(project.link).hostname} ↗
-                    </Link>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        {/* Responsive layout for tablet and smaller screens */}
-        <div className="lg:hidden grid grid-cols-1 gap-4">
-          {projects.map((project, index) => (
-            <ShineBorder key={index} className="p-4 rounded-md hover:bg-muted/50 transition-colors" color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}>
-              <div className="flex justify-between items-center">
-                <div className="flex flex-col">
-                  <div className="flex justify-between items-center">
-                    <div className="font-bold">{project.year}</div>
-                    {project.link && (
-                      <Link
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-muted-foreground hover:text-primary inline-flex items-center"
-                      >
-                        ↗
-                      </Link>
-                    )}
-                  </div>
-                  <div className="text-lg font-medium">{project.name}</div>
-                  <div className="text-sm text-muted-foreground">
-                    {project.technologies.join(", ")}
-                  </div>
-                </div>
-              </div>
-            </ShineBorder>
-          ))}
+    <div className="min-h-screen py-8 lg:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="mb-12">
+          <Link 
+            href="/"
+            className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
+          >
+            <span className="mr-2">←</span>
+            Back to Home
+          </Link>
+          
+          <div className="space-y-4">
+            <h1 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+              Project Archive
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              A comprehensive collection of my projects, experiments and creations
+            </p>
+            <p className="text-sm text-muted-foreground/70">
+              💡 Note: Some projects might be in private repositories or lost in the depths of my hard drive
+            </p>
+          </div>
         </div>
 
-        <p className="text-sm mt-20">ps: there&apos;s more, I can&apos;t find/retrieve, or it&apos;s probably stored in my private repo or lost somewhere🤪</p>
+        {/* Projects by Year */}
+        <div className="space-y-16">
+          {years.map((year) => (
+            <section key={year} className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <h2 className="text-2xl lg:text-3xl font-bold">{year}</h2>
+                <div className="flex-1 h-px bg-border"></div>
+                <span className="text-sm text-muted-foreground font-medium">
+                  {projectsByYear[year].length} project{projectsByYear[year].length !== 1 ? 's' : ''}
+                </span>
+              </div>
 
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {projectsByYear[year].map((project, index) => (
+                  <ShineBorder 
+                    key={index} 
+                    className="group cursor-pointer transition-all duration-300 hover:scale-[1.02]"
+                    color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                  >
+                    <Card className="border-0 shadow-none bg-transparent">
+                      <CardHeader className="pb-3">
+                        <div className="flex items-start justify-between">
+                          <CardTitle className="text-lg font-semibold group-hover:text-primary transition-colors">
+                            {project.name}
+                          </CardTitle>
+                                                     {project.link && (
+                             <Link
+                               href={project.link}
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-muted-foreground hover:text-primary"
+                             >
+                               {project.link.includes('github.com') ? (
+                                 <Github className="h-4 w-4" />
+                               ) : (
+                                 <ExternalLink className="h-4 w-4" />
+                               )}
+                             </Link>
+                           )}
+                        </div>
+                      </CardHeader>
+                      
+                      <CardContent className="pt-0 space-y-4">
+                        <div className="flex flex-wrap gap-2">
+                          {project.technologies.map((tech, techIndex) => (
+                            <Badge 
+                              key={techIndex} 
+                              variant="secondary"
+                              className="text-xs font-medium"
+                            >
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
+                        
+                        {project.link && (
+                          <div className="pt-2">
+                            <Link
+                              href={project.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              {project.link.includes('github.com') ? (
+                                <>
+                                  <Github className="h-3 w-3 mr-1" />
+                                  View on GitHub
+                                </>
+                              ) : project.link.includes('vercel.app') || project.link.includes('.app') ? (
+                                <>
+                                  <Globe className="h-3 w-3 mr-1" />
+                                  Live Demo
+                                </>
+                              ) : (
+                                <>
+                                  <ExternalLink className="h-3 w-3 mr-1" />
+                                  Visit Project
+                                </>
+                              )}
+                            </Link>
+                          </div>
+                        )}
+                      </CardContent>
+                    </Card>
+                  </ShineBorder>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
     </div>
   );
